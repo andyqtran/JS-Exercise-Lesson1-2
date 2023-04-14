@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bài tập JS buổi 2-3</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <!-- Bài 1: Tính tiền lương nhân viên -->
+        <div class="exercise-1 mt-5">
+            <div class="container">
+                <div class="card w-75 m-auto">
+                    <div class="card-header">
+                        <h2 class="cart-title">
+                            Bài 1: Tính tiền lương nhân viên
+                        </h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập lương một ngày"
+                                        id="daySalary"
+                                    />
+                                </div>
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Số ngày làm"
+                                        id="day"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn btn-primary mt-3"
+                                id="salaryCalc"
+                            >
+                                Tính lương
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card-footer">
+                        <p class="salary">
+                            👉 Tiền lương là: <span id="salary"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 2: Tính giá trị trung bình -->
+        <div class="exercise-1 mt-5">
+            <div class="container">
+                <div class="card w-75 m-auto">
+                    <div class="card-header">
+                        <h2 class="cart-title">
+                            Bài 2: Tính Giá trị trung bình
+                        </h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-4">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập số thứ 1"
+                                        id="number1"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập số thứ 2"
+                                        id="number2"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập số thứ 3"
+                                        id="number3"
+                                    />
+                                </div>
+                                <div class="col-4 mt-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập số thứ 4"
+                                        id="number4"
+                                    />
+                                </div>
+                                <div class="col-4 mt-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập số thứ 5"
+                                        id="number5"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn btn-success mt-3"
+                                id="avrCalc"
+                            >
+                                Tính giá trị trung bình
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card-footer">
+                        <p class="avr">
+                            👉 Giá trị trung bình là: <span id="avr"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 3: Quy đổi tiền -->
+        <div class="exercise-3 mt-5">
+            <div class="container">
+                <div class="card w-75 m-auto">
+                    <div class="card-header">
+                        <h2 class="cart-title">Bài 3: Quy đổi tiền</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập số tiền USD"
+                                        id="usd"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn btn-danger mt-3"
+                                id="vndCalc"
+                            >
+                                Quy đổi
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card-footer">
+                        <p class="vnd">
+                            👉 Quy đổi sang VND: <span id="vnd"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 4: Tính diện tích, chu vi hình chữ nhật -->
+        <div class="exercise-4 mt-5">
+            <div class="container">
+                <div class="card w-75 m-auto">
+                    <div class="card-header">
+                        <h2 class="cart-title">
+                            Bài 4: Tính diện tích, chu vi hình chữ nhật
+                        </h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập chiều dài"
+                                        id="edge1"
+                                    />
+                                </div>
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập chiều rộng"
+                                        id="edge2"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn btn-dark mt-3"
+                                id="recCalc"
+                            >
+                                Tính
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card-footer">
+                        <p>👉 <span id="areaPeri"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 5: Tính tổng 2 ký số -->
+        <div class="exercise-5 my-5">
+            <div class="container">
+                <div class="card w-75 m-auto">
+                    <div class="card-header">
+                        <h2 class="cart-title">Bài 5: Tính tổng 2 ký số</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập số có 2 chữ số"
+                                        id="num"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn btn-warning mt-3"
+                                id="sumDigitalCalc"
+                            >
+                                Tính tổng
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card-footer">
+                        <p>👉 <span id="sumDigital"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Main JS -->
+        <script src="./main.js"></script>
+    </body>
+</html>
